@@ -11,7 +11,7 @@ public class kodlar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        puan_text.text = money.puan.ToString();
+        puan_text.text = money.puan.ToString();//money deðerini texte at
     }
 
     // Update is called once per frame
@@ -19,19 +19,19 @@ public class kodlar : MonoBehaviour
     {
         
     }
-
     public void OyunuBaslat()
     {
         SceneManager.LoadScene(1);
+        money.puan = 0;
     }
 
     public void OyundanCik()
     {
-        Application.Quit();
+        Application.Quit();//oyundan çýkar
     }
     public void oyundon()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);//Baþlangýç ekranýna atar
     }
 
 }

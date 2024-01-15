@@ -10,7 +10,6 @@ public class timerkodu : MonoBehaviour
     private Text info;
     private float sayac;
     private Slider zaman;
-    
 
 
 
@@ -22,7 +21,7 @@ public class timerkodu : MonoBehaviour
 
     void Start()
     {
-        zaman.maxValue = 60;
+        zaman.maxValue = 120;
         zaman.minValue = 0;
         zaman.wholeNumbers = false;
         zaman.value = zaman.maxValue;
@@ -40,14 +39,14 @@ public class timerkodu : MonoBehaviour
         else
         {
 
-            StartCoroutine(bbekle());
+            StartCoroutine(bekle());
             
         }
     }
-    IEnumerator bbekle()
+    IEnumerator bekle()
     {
-        
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(2);
+       
     }
 }

@@ -6,31 +6,20 @@ using UnityEngine.UIElements;
 
 public class durdur : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField] GameObject Devam_Ettir;
-    [SerializeField] GameObject DURDUR;
-    void Start()
-    {
-        
+    [SerializeField] GameObject durdurButonu;
+    [SerializeField] GameObject devamEttirButonu;
     
+     public void OyunuDurdur() 
+    {
+        Time.timeScale = 0.0f;  // Zamaný durdur
+        durdurButonu.SetActive(false);  // Durdur butonunu görünmez yap
+        devamEttirButonu.SetActive(true);  // Devam et butonunu görünür yap
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OyunuDevamEttir() 
     {
-       
-    }
-    public void durudur() 
-    {
-        Time.timeScale = 0.0f;
-        DURDUR.SetActive(false);
-        Devam_Ettir.SetActive(true); 
-
-    }
-    public void devamettir() 
-    {
-        Time.timeScale = 1.0f;
-        DURDUR.SetActive(true);
-        Devam_Ettir.SetActive(false);
+        Time.timeScale = 1.0f;  // Zamaný etkinleþtir
+        durdurButonu.SetActive(true);  // Durdur butonunu görünür yap
+        devamEttirButonu.SetActive(false);  // Devam et butonunu görünmez yap
     }
 }

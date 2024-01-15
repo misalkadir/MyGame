@@ -6,35 +6,22 @@ using UnityEngine.UI;
 
 public class money : MonoBehaviour
 {
-    public static int puan = 0;
-    public Text puan_text;
-    public AudioSource ses;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    public static int puan = 0;// Toplam puan için static deðiþken tanýmladým
+    public Text puan_text;// Puanýn texti public class
+    public AudioSource ses;// Ses dosyasý için public class
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.name == "money")
-    //    {
-    //        Destroy(collision.gameObject);
-    //    }
-    //}
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Araba")
+        if (other.gameObject.name == "Araba")//Eðer Araba nesnesine dokunuyorsa tetikle
         {
-            Destroy(gameObject);
-            puan+=10;
-            ses.PlayOneShot(ses.clip);
+            Destroy(gameObject);// para nesnesini yok et.
+            puan += 10;// Puaný 10 arttýr.
+            ses.PlayOneShot(ses.clip);// Ses dosyasýný çal.
         }
+
+        // Puaný ekranda gösteren metni güncelle.
         puan_text.text = Convert.ToString(puan);
     }
 }
