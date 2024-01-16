@@ -24,7 +24,7 @@ public class timerkodu : MonoBehaviour
     // Bu metot, oyun baþladýðýnda çaðrýlýr
     void Start()
     {
-        zaman.maxValue = 25;// Timer'ýn maksimum deðerini ayarlama
+        zaman.maxValue = 60;// Timer'ýn maksimum deðerini ayarlama
         zaman.minValue = 0; // Timer'ýn minimum deðerini ayarlama
         zaman.wholeNumbers = false;// Sayýsal deðerlerin tam sayý olup olmadýðýný belirle
         zaman.value = zaman.maxValue;// Timer'ý baþlangýç deðeriyle ayarla
