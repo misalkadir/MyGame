@@ -6,32 +6,30 @@ using UnityEngine.SceneManagement;
 
 public class kodlar : MonoBehaviour
 {
+    // Oyun içinde puaný göstermek için kullanýlacak text nesnesid
     public Text puan_text;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
-        puan_text.text = money.puan.ToString();//money deðerini texte at
+        puan_text.text = money.puan.ToString();// money deðerini stringe dönüþtürüp puan_text deðiþkenine atar.
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Oyunu baþlatmak için kullanýlan metot
     public void OyunuBaslat()
     {
-        SceneManager.LoadScene(1);
-        money.puan = 0;
+        SceneManager.LoadScene(1);// Oyun sahnesi
+        money.puan = 0; // Oyun baþladýðýnda puaný sýfýrlar
     }
-
+    // Oyundan çýkmak için kullanýlan metot
     public void OyundanCik()
     {
-        Application.Quit();//oyundan çýkar
+        Application.Quit();// Uygulamadan çýkýþ yap
     }
-    public void oyundon()
+    
+    public void surebittii()
     {
-        SceneManager.LoadScene(0);//Baþlangýç ekranýna atar
+        SceneManager.LoadScene(0);// Süre bitti sahnesine geçiþ yapar
     }
 
 }

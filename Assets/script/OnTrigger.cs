@@ -5,25 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class OnColission : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
+    // Araba nesnesi Deathbox nesnesine çarparsa baþlangýça dönmesi için
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Araba") 
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);// Baþlangýç sahnesini yükle
         }
         
     }

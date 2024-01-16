@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 240393872}
   - component: {fileID: 240393873}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,7 +475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: 264.2}
+  m_AnchoredPosition: {x: -349.6, y: 264.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &295667345
@@ -590,7 +590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -290, y: 264.2}
+  m_AnchoredPosition: {x: -310, y: 264.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358879013
@@ -768,7 +768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -226, y: 268.2}
+  m_AnchoredPosition: {x: -247.4, y: 271.8}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &530124877
@@ -957,8 +957,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf5f6db976cd8439fe9dbf2e7ea76f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Devam_Ettir: {fileID: 1592735548}
-  DURDUR: {fileID: 1152946870}
+  durdurButonu: {fileID: 1152946870}
+  devamEttirButonu: {fileID: 1592735548}
 --- !u!4 &745219044
 Transform:
   m_ObjectHideFlags: 0
@@ -1031,16 +1031,24 @@ PrefabInstance:
       value: money 1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4214468467016227919, guid: 13012698721e38d468f1567dd19cacd6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 94.994995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214468467016227919, guid: 13012698721e38d468f1567dd19cacd6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 76.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214468467016227919, guid: 13012698721e38d468f1567dd19cacd6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 4214468467016227919, guid: 13012698721e38d468f1567dd19cacd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.24
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 4214468467016227919, guid: 13012698721e38d468f1567dd19cacd6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.042409
+      value: 6.29
       objectReference: {fileID: 0}
     - target: {fileID: 4214468467016227919, guid: 13012698721e38d468f1567dd19cacd6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1171,8 +1179,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 07f44fe3e9c462146a7769b976c50ec4, type: 2}
     - target: {fileID: 2580857170979173632, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580857170979173632, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: m_Mass
-      value: 1000
+      value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580857170979173632, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 3815435553298920706, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1220,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8986358587381944538, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: frenGucu
-      value: 1800
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 8986358587381944538, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: motorGucu
@@ -1624,7 +1640,7 @@ GameObject:
   - component: {fileID: 1152946873}
   - component: {fileID: 1152946872}
   m_Layer: 5
-  m_Name: BtnDurdur
+  m_Name: durdurButonu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1696,7 +1712,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 745219043}
         m_TargetAssemblyTypeName: durdur, Assembly-CSharp
-        m_MethodName: durudur
+        m_MethodName: OyunuDurdur
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1953,7 +1969,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Skor: '
+  m_Text: 'Puan: '
 --- !u!222 &1338190822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2069,7 +2085,7 @@ GameObject:
   - component: {fileID: 1592735550}
   - component: {fileID: 1592735549}
   m_Layer: 5
-  m_Name: Devam Ettir
+  m_Name: devamEttirButonu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2121,7 +2137,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 745219043}
         m_TargetAssemblyTypeName: durdur, Assembly-CSharp
-        m_MethodName: devamettir
+        m_MethodName: OyunuDevamEttir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2186,7 +2202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390.9, y: 278.8}
+  m_AnchoredPosition: {x: 476.1, y: 271}
   m_SizeDelta: {x: 80, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1831338810
@@ -2399,11 +2415,11 @@ WheelCollider:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1955567489}
   - {fileID: 1238863037}
   - {fileID: 965916797}
   - {fileID: 605926728}
   - {fileID: 1004358837}
-  - {fileID: 1955567489}
   - {fileID: 966301975}
   - {fileID: 745219044}
   - {fileID: 240393871}
